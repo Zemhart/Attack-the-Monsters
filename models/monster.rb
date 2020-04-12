@@ -7,30 +7,30 @@ class Monster
     @hp = 30
     @attack = 3
     @defense = 0
-		@type = type.new unless type.nil?
-		set_perks
+    @type = type.new
+    set_perks
   end
 
-	def type
-    @type.nil? ? 'unidentified' : @type.class.name
-	end
+  def type
+    @type.class.name
+  end
 
   def name
-    @type.nil? ? 'unidentified' : @type.name
- 	end
+    @type.name
+  end
 
-	def desc
-    @type.nil? ? 'unidentified' : @type.desc
-	end
+  def desc
+    @type.desc
+  end
 
-	private
+  private
 
-	def set_perks
+  def set_perks
     return if @type.nil?
 
-		@type.perks.each do |perk|
-		 var = send(perk[:m_attr])
-		  instance_variable_set("@#{perk[:m_attr]}", var.send(perk[:operator], perk[:value]))
-		end
-	end
+    @type.perks.each do |perk|
+     var = send(perk[:m_attr])
+     instance_variable_set("@#{perk[:m_attr]}", var.send(perk[:operator], perk[:value]))
+    end
+  end
 end

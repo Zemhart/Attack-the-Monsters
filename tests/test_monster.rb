@@ -11,11 +11,11 @@ class TestMonster < Minitest::Test
   end
 
   def test_name_is_null
-    assert_nil @monster.name
+    assert_equal 'unidentified', @monster.name
   end
 
   def test_type_is_null
-    assert_nil @monster.type
+    assert_equal 'DefaultType', @monster.type
   end
 
   def test_attack_is_3

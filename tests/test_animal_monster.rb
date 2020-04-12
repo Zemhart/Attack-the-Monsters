@@ -10,15 +10,15 @@ class TestAnimalMonster < Minitest::Test
     assert_equal 30 * 1.1, @animal_monster.hp
   end
 
-	def test_name
+  def test_name
     assert_equal 'Animal Monster', @animal_monster.name
   end
 
-	def test_type
+  def test_type
     assert_equal 'AnimalType', @animal_monster.type
   end
 
-	def test_attack
+  def test_attack
     assert_equal 3 + 1, @animal_monster.attack
   end
 

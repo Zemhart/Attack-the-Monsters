@@ -1,13 +1,13 @@
 class DefaultType
- def name
-	'unidentified'
- end
+  def name
+    'unidentified'
+  end
 
- def desc
-	'unidentified'
- end
+  def desc
+    'unidentified'
+  end
 
- def perks
-	[]
- end
+  def perks
+    []
+  end
 end

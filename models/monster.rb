@@ -20,6 +20,4 @@ class Monster
   end
 
   def name; end
-
-  def perks; end
 end

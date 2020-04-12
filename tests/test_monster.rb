@@ -7,22 +7,22 @@ class TestMonster < Minitest::Test
   end
 
   def test_hp_is_30
-		assert_equal 30, @monster.hp    
+    assert_equal 30, @monster.hp    
   end
 
-	def test_name_is_null
+  def test_name_is_null
     assert_nil @monster.name
   end
 
   def test_type_is_null
-		assert_nil @monster.type
-	end
+    assert_nil @monster.type
+  end
 
   def test_attack_is_3
-		assert_equal 3, @monster.attack
-	end
+    assert_equal 3, @monster.attack
+  end
 
-	def test_defense_is_0
-		assert_equal 0, @monster.defense
-	end 
+  def test_defense_is_0
+    assert_equal 0, @monster.defense
+  end 
 end

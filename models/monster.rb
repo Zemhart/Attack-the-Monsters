@@ -1,3 +1,6 @@
+require 'require_all'
+require_all "."
+
 class Monster
   def initialize
     @hp = 30

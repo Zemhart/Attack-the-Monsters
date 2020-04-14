@@ -1,4 +1,6 @@
 class Character
+  attr_reader :hp, :attack, :defense
+
   def initialize
     @hp = 0
     @name = ''

@@ -1,36 +1,21 @@
-require 'require_all'
-require_rel "../types"
+require_relative 'character'
 
-class Monster
- 	attr_reader :hp, :attack, :defense
-  def initialize(type: DefaultType)
+class Monster < Character
+  def initialize
+    super
     @hp = 30
     @attack = 3
-    @defense = 0
-    @type = type.new
-    set_perks
   end
 
   def type
-    @type.class.name
+    'unidentified'
   end
 
   def name
-    @type.name
+    'unidentified'
   end
 
   def desc
-    @type.desc
-  end
-
-  private
-
-  def set_perks
-    return if @type.nil?
-
-    @type.perks.each do |perk|
-     var = send(perk[:m_attr])
-     instance_variable_set("@#{perk[:m_attr]}", var.send(perk[:operator], perk[:value]))
-    end
+    'unidentified'
   end
 end

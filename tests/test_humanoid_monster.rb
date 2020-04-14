@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative '../monster_types/humanoid_monster'
+require_relative '../app/monster_types/humanoid_monster'
 
 class TestHumanoidMonster < Minitest::Test
   def setup
@@ -24,5 +24,9 @@ class TestHumanoidMonster < Minitest::Test
 
   def test_humanoid_defense
     assert_equal 0 + 1, @humanoid_monster.defense
+  end
+
+  def test_humanoid_weapon
+    refute_nil @humanoid_monster.weapon
   end
 end

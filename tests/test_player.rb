@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative '../models/player'
+require_relative '../app/models/player'
 
 class TestPlayer < Minitest::Test
   def setup

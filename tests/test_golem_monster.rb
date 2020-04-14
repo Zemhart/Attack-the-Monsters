@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative '../monster_types/golem_monster'
+require_relative '../app/monster_types/golem_monster'
 
 class TestGolemMonster < Minitest::Test
   def setup

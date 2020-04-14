@@ -5,6 +5,6 @@ class Axe < Weapon
     {
       attack: { operator: '+', value: 2 },
       defense: { operator: '-', value: 1 }
-    ]
+    }
   end
 end

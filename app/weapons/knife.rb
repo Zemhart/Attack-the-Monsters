@@ -8,6 +8,6 @@ class Knife < Weapon
   end
 
   def ability_perks
-    { type: :critical, modifier: 2, chance: 30 }]
+    { type: :critical, modifier: 2, chance: 30 }
   end
 end

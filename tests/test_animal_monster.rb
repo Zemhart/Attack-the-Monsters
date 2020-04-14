@@ -22,7 +22,7 @@ class TestAnimalMonster < Minitest::Test
     assert_equal 3 + 1, @animal_monster.attack
   end
 
-	def test_defense
+  def test_defense
     assert_equal 0, @animal_monster.defense
   end
 end
